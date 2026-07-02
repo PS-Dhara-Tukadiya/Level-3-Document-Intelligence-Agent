@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Intelligence Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><i class="ti ti-file-text"></i> Document Intelligence Agent</h1>
+    <p class="subtitle">Upload one or more documents or pictures and ask anything about them</p>
+
+    <!-- Step Indicators -->
+    <div class="step-indicators">
+        <div class="step">
+            <div class="step-dot active" id="sd1">1</div>
+            <span class="step-label active" id="sl1">Upload</span>
+        </div>
+        <div class="step-line" id="sl-1"></div>
+        <div class="step">
+            <div class="step-dot" id="sd2">2</div>
+            <span class="step-label" id="sl2">Ask</span>
+        </div>
+        <div class="step-line" id="sl-2"></div>
+        <div class="step">
+            <div class="step-dot" id="sd3">3</div>
+            <span class="step-label" id="sl3">Get insights</span>
+        </div>
+    </div>
+
+    <!-- Upload Card -->
+    <div class="upload-card">
+        <div class="section-label">Documents &amp; Pictures</div>
+
+        <div class="upload-zone" id="uploadZone"
+            onclick="document.getElementById('fileInput').click()"
+            ondragover="event.preventDefault(); this.classList.add('drag')"
+            ondragleave="this.classList.remove('drag')"
+            ondrop="handleDrop(event)">
+            <i class="ti ti-cloud-upload" id="uzIcon"></i>
+            <div class="uz-label" id="uzLabel">Drop files here or click to browse</div>
+            <div class="uz-hint" id="uzHint">PDF, DOCX, TXT, or pictures (PNG/JPG/WEBP/GIF) — multiple files supported</div>
+        </div>
+
+        <input type="file" id="fileInput" hidden accept=".pdf,.docx,.txt,.png,.jpg,.jpeg,.webp,.gif" multiple
+            onchange="handleFiles(this.files)">
+
+        <div id="uploadError" style="display:none; color:#f87171; font-size:13px; margin-top:10px;"></div>
+
+        <!-- List of uploaded documents (one pill per file) -->
+        <div class="file-list" id="fileList"></div>
+    </div>
+
+    <!-- Chat Card -->
+    <div class="chat-card">
+        <div class="section-label">Your question <span id="askScope" class="ask-scope"></span></div>
+
+        <div class="textarea-wrap">
+            <textarea
+                id="question"
+                placeholder="Ask anything about your document(s)..."
+                maxlength="500"
+                oninput="updateChar()">
+            </textarea>
+            <span class="char-count" id="charCount">0 / 500</span>
+        </div>
+
+        <!-- Quick Chips -->
+        <div class="quick-chips">
+            <div class="chip" onclick="setChip('Summarize this document')">
+                <i class="ti ti-align-left"></i> Summarize
+            </div>
+            <div class="chip" onclick="setChip('What are the key findings?')">
+                <i class="ti ti-bulb"></i> Key findings
+            </div>
+            <div class="chip" onclick="setChip('List all action items')">
+                <i class="ti ti-checklist"></i> Action items
+            </div>
+            <div class="chip" onclick="setChip('Identify any risks or concerns')">
+                <i class="ti ti-alert-triangle"></i> Risks
+            </div>
+        </div>
+
+        <button id="askBtn" onclick="askQuestion()">
+            <i class="ti ti-sparkles"></i> Ask AI
+        </button>
+    </div>
+
+    <!-- Result Card -->
+    <div class="result-card" id="resultCard">
+        <div class="result-header">
+            <i class="ti ti-robot"></i>
+            <span>AI Response</span>
+        </div>
+        <div class="result-body" id="result"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

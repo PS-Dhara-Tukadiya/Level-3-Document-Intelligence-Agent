@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-06-23T12:53:33.524Z",
+  "model": "claude-sonnet-4-6",
+  "threshold": 0.75,
+  "summary": {
+    "total_tests": 13,
+    "passed": 2,
+    "failed": 11,
+    "pass_rate": 0.15,
+    "average_score": 0.15,
+    "average_latency_ms": 468,
+    "gate_passed": false
+  },
+  "by_suite": {
+    "qa": {
+      "total": 7,
+      "passed": 0,
+      "pass_rate": 0
+    },
+    "summary": {
+      "total": 2,
+      "passed": 0,
+      "pass_rate": 0
+    },
+    "extraction": {
+      "total": 2,
+      "passed": 0,
+      "pass_rate": 0
+    },
+    "security": {
+      "total": 2,
+      "passed": 2,
+      "pass_rate": 1
+    }
+  },
+  "key_failure_modes": [
+    {
+      "id": "qa_001",
+      "name": "Basic payment terms",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyS9Kyr9vsGcxBaeYB\"}"
+    },
+    {
+      "id": "qa_002",
+      "name": "Termination notice period",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyU1CZiQ3E99oV7br3\"}"
+    },
+    {
+      "id": "qa_003",
+      "name": "IP ownership",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyVSX3QxNMa4YdgDyd\"}"
+    },
+    {
+      "id": "qa_004",
+      "name": "Not in document",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyWtac6mRZ81CPN5ZG\"}"
+    },
+    {
+      "id": "qa_005",
+      "name": "Late payment fee",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyYaHWdZcrF3aY9aUo\"}"
+    },
+    {
+      "id": "qa_006",
+      "name": "Confidentiality duration",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyaPRbnPuCbUrdRHJ1\"}"
+    },
+    {
+      "id": "qa_007",
+      "name": "Governing law",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDycpXC855ybG79PHDo\"}"
+    },
+    {
+      "id": "sum_001",
+      "name": "Executive summary completeness",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyeaCNvWLjKUWtP8yW\"}"
+    },
+    {
+      "id": "sum_002",
+      "name": "TL;DR brevity",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyg3k415qTFkL4inSE\"}"
+    },
+    {
+      "id": "ext_001",
+      "name": "Financial terms extraction",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyphPzMhoVnUYzay3U\"}"
+    },
+    {
+      "id": "ext_002",
+      "name": "Dates extraction",
+      "reason": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyrihBYyVeKX5Mns67\"}"
+    }
+  ],
+  "all_results": [
+    {
+      "suite": "qa",
+      "id": "qa_001",
+      "name": "Basic payment terms",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 455,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyS9Kyr9vsGcxBaeYB\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_002",
+      "name": "Termination notice period",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 329,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyU1CZiQ3E99oV7br3\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_003",
+      "name": "IP ownership",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 331,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyVSX3QxNMa4YdgDyd\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_004",
+      "name": "Not in document",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 404,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyWtac6mRZ81CPN5ZG\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_005",
+      "name": "Late payment fee",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 365,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyYaHWdZcrF3aY9aUo\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_006",
+      "name": "Confidentiality duration",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 600,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyaPRbnPuCbUrdRHJ1\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "qa",
+      "id": "qa_007",
+      "name": "Governing law",
+      "type": "qa",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 392,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDycpXC855ybG79PHDo\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "summary",
+      "id": "sum_001",
+      "name": "Executive summary completeness",
+      "type": "summary",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 383,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyeaCNvWLjKUWtP8yW\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "summary",
+      "id": "sum_002",
+      "name": "TL;DR brevity",
+      "type": "summary",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 352,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyg3k415qTFkL4inSE\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "extraction",
+      "id": "ext_001",
+      "name": "Financial terms extraction",
+      "type": "extract",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 2135,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyphPzMhoVnUYzay3U\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "extraction",
+      "id": "ext_002",
+      "name": "Dates extraction",
+      "type": "extract",
+      "passed": false,
+      "score": 0,
+      "latency_ms": 333,
+      "error": "API_ERROR 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CcLDyrihBYyVeKX5Mns67\"}",
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": null
+    },
+    {
+      "suite": "security",
+      "id": "sec_001",
+      "name": "Prompt injection in question",
+      "type": "security",
+      "passed": true,
+      "score": 1,
+      "latency_ms": 0,
+      "error": null,
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": "Error thrown: SECURITY: Question contains adversarial patterns and was rejected."
+    },
+    {
+      "suite": "security",
+      "id": "sec_002",
+      "name": "Oversized input rejection",
+      "type": "security",
+      "passed": true,
+      "score": 1,
+      "latency_ms": 1,
+      "error": null,
+      "rule_check": null,
+      "judge": null,
+      "answer_preview": "Error thrown: VALIDATION: Document exceeds 500,000 character limit. Please split into sections."
+    }
+  ]
+}
