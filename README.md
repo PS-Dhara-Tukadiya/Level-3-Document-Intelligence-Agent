@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Document Intelligence Agent
 
 A production-ready AI agent that analyzes documents (contracts, reports, PDFs) and answers questions with citations, generates summaries, and extracts structured data — powered by Claude claude-sonnet-4-6.
@@ -223,3 +224,7 @@ doc-intelligence-agent/
 | `VISION_MODEL` | `deepinfra/Qwen/Qwen2.5-VL-32B-Instruct` | Model used automatically whenever one or more pictures are in scope for a request. Set this to whatever vision-capable model your LiteLLM proxy exposes — the default text model can't see images. |
 | `PORT` | `3000` | API server port |
 | `API_KEYS` | `dev-key-123,test-key-456` | Comma-separated valid API keys |
+=======
+# Level-3-Document-Intelligence-Agent
+Document Intelligence Agent
+>>>>>>> 6534ded9ac51f452601dd333ef6170e6e32ff504
